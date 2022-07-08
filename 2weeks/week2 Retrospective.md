@@ -10,11 +10,11 @@
 
 ### BOJ11047[그리디]
 
-![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62997391/177955979-57ee602a-b2d6-4372-97a9-da2d35977b9c.png)
 
 ### BOJ1541[그리디]
 
-![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/62997391/177955989-c8b05129-e7bc-4368-9e34-6dd7f103d232.png)
 
 **<Analysis before Solving>**
 
