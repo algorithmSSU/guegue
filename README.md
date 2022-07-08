@@ -1,4 +1,4 @@
-# Weekly solving problem
+# Weekly Solving problem
 | 주차  | 문제  |
 |:---:|:------:|
 | 1주차  | [boj11724](https://www.acmicpc.net/problem/11724) [풀이](1weeks/BaekJoon_11724_DFS.java) <br> [boj2023](https://www.acmicpc.net/problem/2023) [풀이](1weeks/BaekJoon_2023_DFS.java) <br>  [boj13023](https://www.acmicpc.net/problem/13023) [풀이](1weeks/BaekJoon_13023_DFS.java) <br>  [boj1260](https://www.acmicpc.net/problem/1260) [풀이](1weeks/BaekJoon_1260_BFS.java) <br>  [boj2178](https://www.acmicpc.net/problem/2178) [풀이](1weeks/BaekJoon_2178_BFS.java) <br>  |
