@@ -43,7 +43,7 @@
 - 자기 자신을 호출하는 순환 알고리즘의 형태 를 가지고 있다.
 - 이 알고리즘을 구현할 때 가장 큰 차이점은, 그래프 탐색의 경우 어떤 노드를 방문했었는지 여부를 반드시 검사 해야 한다는 것이다.
 
-![Untitled](1%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%202dee97d9d44443b38e58c95c29d45d93/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62997391/177922065-d7953c9b-dcd1-4e73-9d3f-f439033cd130.png)
 
 ### 핵심
 
