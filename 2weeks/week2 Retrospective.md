@@ -53,6 +53,7 @@
 
 ![Untitled 2](https://user-images.githubusercontent.com/62997391/178148224-35dba083-5a65-4682-b52c-0716bb03d329.png)
 
+      
 **<Analysis before Solving>**
 
 시간제한 | 2초
@@ -65,6 +66,7 @@
 - Map 쓰면 좋을 거 같음 → Map의 Key값에 대하여 정렬한 후 최대가 되는 값 찾아가면 될 듯? → XX
 - 무조건 정렬하면 편할 거 같음
 
+      
 **<Retrospective after Solving>**
 
 - 같은 시간(Key)에 대하여 여러 개의 Value가 있을 수 있으므로 Map X인 걸 알았어야 함
