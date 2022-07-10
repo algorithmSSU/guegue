@@ -10,11 +10,13 @@
 
 ### BOJ11047[그리디]
 
-![Untitled](https://user-images.githubusercontent.com/62997391/177955979-57ee602a-b2d6-4372-97a9-da2d35977b9c.png)
+![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled.png)
+
+---
 
 ### BOJ1541[그리디]
 
-![Untitled 1](https://user-images.githubusercontent.com/62997391/177955989-c8b05129-e7bc-4368-9e34-6dd7f103d232.png)
+![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled%201.png)
 
 **<Analysis before Solving>**
 
@@ -22,7 +24,7 @@
 
 시간복잡도 | ??? 잘 모르겠음 ㅠ
 
-조건 |
+조건 | 
 
 - 식의 값 최소화
 - operand가 0으로 시작 가능 (→ 처리 해주기 필수)
@@ -46,14 +48,14 @@
 2. 첫번째 token에서 “+”을 기준으로 Token 나누고 operand에 대하여 answer에 더하기
 3. 첫번째를 제외하고 나머지 Token에서 “+”을 기준으로 Token 나누고 operand에 대하여 answer에 빼기
 
+ 
 
 ---
 
 ### BOJ1931[그리디]
 
-![Untitled 2](https://user-images.githubusercontent.com/62997391/178148224-35dba083-5a65-4682-b52c-0716bb03d329.png)
+![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled%202.png)
 
-      
 **<Analysis before Solving>**
 
 시간제한 | 2초
@@ -66,7 +68,6 @@
 - Map 쓰면 좋을 거 같음 → Map의 Key값에 대하여 정렬한 후 최대가 되는 값 찾아가면 될 듯? → XX
 - 무조건 정렬하면 편할 거 같음
 
-      
 **<Retrospective after Solving>**
 
 - 같은 시간(Key)에 대하여 여러 개의 Value가 있을 수 있으므로 Map X인 걸 알았어야 함
