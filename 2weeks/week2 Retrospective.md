@@ -10,13 +10,13 @@
 
 ### BOJ11047[그리디]
 
-![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62997391/178148490-69238cb1-0220-4324-9350-353729c6b482.png)
 
 ---
 
 ### BOJ1541[그리디]
 
-![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/62997391/178148494-7799a300-cd70-4d67-a62d-d37caf735344.png)
 
 **<Analysis before Solving>**
 
@@ -54,7 +54,7 @@
 
 ### BOJ1931[그리디]
 
-![Untitled](week2%20Retrospective%207eb8ce444ba3412c9401ac16823f6eb1/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/62997391/178148502-7c9a2bcf-1928-48ec-b8c8-ec6cbbbe65b6.png)
 
 **<Analysis before Solving>**
 
