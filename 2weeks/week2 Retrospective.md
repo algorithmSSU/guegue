@@ -51,7 +51,8 @@
 
 ### BOJ1931[그리디]
 
-![](../../../Downloads/weeks2 1931/week2 Retrospective 7eb8ce444ba3412c9401ac16823f6eb1/Untitled 2.png)
+![Untitled 2](https://user-images.githubusercontent.com/62997391/178148126-f8f53397-f9f4-4a70-9ac7-52e5e6856942.png)
+
 
 **<Analysis before Solving>**
 
