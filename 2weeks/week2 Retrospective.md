@@ -51,8 +51,7 @@
 
 ### BOJ1931[그리디]
 
-![Untitled 2](https://user-images.githubusercontent.com/62997391/178148126-f8f53397-f9f4-4a70-9ac7-52e5e6856942.png)
-
+![Untitled 2](https://user-images.githubusercontent.com/62997391/178148224-35dba083-5a65-4682-b52c-0716bb03d329.png)
 
 **<Analysis before Solving>**
 
@@ -60,7 +59,7 @@
 
 시간복잡도 | 회의의 수가 최악의 경우 100,000이기 때문에 O(N*logN)까지 가능? O(N^2)는 안될 거 같음.
 
-조건 |
+조건 | 
 
 - 사용할 수 있는 회의의 최대 개수 찾기
 - Map 쓰면 좋을 거 같음 → Map의 Key값에 대하여 정렬한 후 최대가 되는 값 찾아가면 될 듯? → XX
