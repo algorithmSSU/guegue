@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BaekJoon_11047 {
+public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -15,18 +15,17 @@ public class BaekJoon_11047 {
         for(int i = coins.length-1; i >= 0; i--){
             coins[i] = Integer.parseInt(br.readLine());
         }
-        int coinPointer = 0;
         int count = 0;
-
-        while(K != 0 && coinPointer < coins.length){
-            if(coins[coinPointer] <= K){
-                int tmp = K / coins[coinPointer];
-                count += tmp;
-                K %= coins[coinPointer];
-            }else{
-                coinPointer++;
+        for (int coin : coins){
+            if(coin > K){
+                continue;
+            }
+            else{
+                count += K / coin;
+                K %= coin;
             }
         }
+
         System.out.println(count);
     }
 }
