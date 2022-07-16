@@ -8,51 +8,25 @@ public class BaekJoon_1541 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String exp = br.readLine();
-        int minSum = 0;
-
-        // separate operand and operator in exp
-        Stack stack = stringToStack(exp);
-
-
-        // calculate stack
-        int tmp = 0;
-        while(!stack.isEmpty()){
-            Object obj = stack.pop();
-            // '+'
-            if(obj.toString().equals("+")){
-                continue;
+        int num = 0;
+        int answer = 0;
+        int flag = 1;
+        for(char c : exp.split("")){
+            if(c =='+'){
+                answer += num;
+                num = 0;
             }
-            // '-'
-            else if(obj.toString().equals("-")){
-                minSum += (tmp * -1);
-                tmp = 0;
+            else if(c == '-'){
+                flag = -1;
+                answer += num;
+                num = 0;
             }
-            // operand
             else{
-                tmp += (int)obj;
+                num = num * 10 + (c - '0')*flag;
             }
+        answer += num;
+        System.out.println(answer);
         }
-        minSum += tmp;
-
-        System.out.println(minSum);
-    }
-
-    private static Stack stringToStack(String exp){
-        Stack stack = new Stack();
-
-        int i = 0;
-        while(i < exp.length()){
-            if (exp.charAt(i) == '+' || exp.charAt(i) == '-')   //push operator
-                stack.push(exp.charAt(i++));
-            else{   //push integer
-                String num = "";
-                while(i < exp.length() && Character.isDigit(exp.charAt(i))){
-                    num += exp.substring(i, ++i);
-                }
-                stack.push(Integer.parseInt(num));
-            }
-        }
-        return stack;
     }
 }
 
