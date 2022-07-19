@@ -5,29 +5,29 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class BaekJoon_1541 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String exp = br.readLine();
-        int num = 0;
-        int answer = 0;
-        int flag = 1;
-        for(char c : exp.split("")){
-            if(c =='+'){
-                answer += num;
-                num = 0;
-            }
-            else if(c == '-'){
-                flag = -1;
-                answer += num;
-                num = 0;
-            }
-            else{
-                num = num * 10 + (c - '0')*flag;
-            }
-        answer += num;
-        System.out.println(answer);
-        }
-    }
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String exp = br.readLine();
+//        int num = 0;
+//        int answer = 0;
+//        int flag = 1;
+//        for(char c : exp.split("")){
+//            if(c =='+'){
+//                answer += num;
+//                num = 0;
+//            }
+//            else if(c == '-'){
+//                flag = -1;
+//                answer += num;
+//                num = 0;
+//            }
+//            else{
+//                num = num * 10 + (c - '0')*flag;
+//            }
+//        answer += num;
+//        System.out.println(answer);
+//        }
+//    }
 }
 
 

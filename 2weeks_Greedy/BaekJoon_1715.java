@@ -17,22 +17,16 @@ public class BaekJoon_1715 {
         }
 
 
-        if(queue.size() == 1){
-            System.out.println(0);
-            return;
-        }
+
         /*
         [종료조건] Queue가 빌 때까지
         queue에서 2개 빼서 더한값을 tmp
         sum += tmp
         종료조건 검사 후 break or Queue에 다시 tmp 삽입 후 loop
         */
-        while (true){
+        while (queue.size() > 1){
             int tmp = queue.poll() + queue.poll();
             sum += tmp;
-
-            if(queue.isEmpty())
-                break;
             queue.add(tmp);
         }
         System.out.println(sum);
