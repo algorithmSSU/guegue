@@ -3,33 +3,31 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class BaekJoon_1463 {
+public class BaekJoon_1463_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         int[] dp = new int[N+1];
 
-        // 예외처리
-        if(N == 1){
-            System.out.println(0);
-            return;
-        }else if(N == 2){
-            System.out.println(1);
-            return;
-        }
-
-        dp[2] = 1;
-        dp[3] = 1;
-
-        for(int i = 4; i <= N; i++){
-            int exp1 = (i % 3 == 0 && dp[i/3] != 0) ? dp[i/3] : 1000000;
-            int exp2 = (i % 2 == 0 && dp[i/2] != 0) ? dp[i/2] : 1000000;
-            int exp3 = (dp[i-1] != 0) ? dp[i-1] : 1000000;
-            dp[i] = Math.min(Math.min(exp1, exp2), exp3) + 1;
+        for(int i = 2 ; i <= N; i++){
+            dp[i] = dp[i-1] + 1;
+            if(i%3 == 0){
+                dp[i] = Math.min(dp[i/3] + 1, dp[i]);
+            }
+            if(i%2 == 0){
+                dp[i] = Math.min(dp[i/2] + 1, dp[i]);
+            }
         }
         System.out.println(dp[N]);
     }
 }
+//        0. array 하나 만들기 (크기 n+1)
+//        1. 1~N까지 반복문 -> i
+//        2. 각 식에 해당하는 요소 찾고 그 요소의 값이 0이면 -1 넣고 0이 아니면 그 값 그대로 넣기
+//        3. 3개 중 -1 제외하고 최솟값 찾은 후 +1
+//        4. array[N] 출력
+
+
 
 /*
 1로 만들기
