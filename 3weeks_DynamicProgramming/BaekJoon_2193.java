@@ -21,8 +21,8 @@ public class BaekJoon_2193 {
         for(int i = 2; i <= N; i++){
             array[i][0] = array[i-1][0] + array[i-1][1];
             array[i][1] = array[i-1][0];
-
         }
+
         System.out.println(array[N][0] + array[N][1]);
     }
 }
