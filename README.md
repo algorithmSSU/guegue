@@ -3,7 +3,7 @@
 
 | 주차  | 문제  | 풀이  | 분석  |
 |:---:|:------|:-----:|:-----:|
-| 1주차  | [boj11659](https://www.acmicpc.net/problem/11659) <br> [boj11720](https://www.acmicpc.net/problem/11720) <br> [boj11724](https://www.acmicpc.net/problem/11724) <br> [boj1260](https://www.acmicpc.net/problem/1260) <br> [boj13023](https://www.acmicpc.net/problem/13023) <br> [boj1546](https://www.acmicpc.net/problem/1546) <br> [boj2023](https://www.acmicpc.net/problem/2023) <br> [boj2178](https://www.acmicpc.net/problem/2178)  | [풀이](DFS_BFS/11724.cpp) <br> [풀이](DFS_BFS/2023.cpp) <br> [풀이](DFS_BFS/13023.cpp) <br> [풀이](DFS_BFS/1206.cpp) <br> [풀이](DFS_BFS/2178.cpp)  | [DFS_BFS](분석/DFS_BFS.ipynb)
+| 1주차  | [boj11659](https://www.acmicpc.net/problem/11659) <br> [boj11720](https://www.acmicpc.net/problem/11720) <br> [boj11724](https://www.acmicpc.net/problem/11724) <br> [boj1260](https://www.acmicpc.net/problem/1260) <br> [boj13023](https://www.acmicpc.net/problem/13023) <br> [boj1546](https://www.acmicpc.net/problem/1546) <br> [boj2023](https://www.acmicpc.net/problem/2023) <br> [boj2178](https://www.acmicpc.net/problem/2178)  | [풀이](1weeks_DFS%20BFS/BaekJoon_11659.java) <br> [풀이](DFS_BFS/2023.cpp) <br> [풀이](DFS_BFS/13023.cpp) <br> [풀이](DFS_BFS/1206.cpp) <br> [풀이](DFS_BFS/2178.cpp)  | [DFS_BFS](분석/DFS_BFS.ipynb)
 
 
 
