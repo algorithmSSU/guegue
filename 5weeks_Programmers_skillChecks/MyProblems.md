@@ -26,7 +26,8 @@
 - 인쇄 작업의 중요도는 1~9로 표현하며 숫자가 클수록 중요하다는 뜻입니다.
 - location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 값을 가지며 대기목록의 가장 앞에 있으면 0, 두 번째에 있으면 1로 표현합니다.
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62997391/183292876-1736c6bd-183a-4a27-aff9-d32f8365da67.png)
+
 
 ### 입출력 예 설명
 
@@ -157,7 +158,8 @@ class Solution {
 
 입력으로 들어온 두 문자열의 자카드 유사도를 출력한다. 유사도 값은 0에서 1 사이의 실수이므로, 이를 다루기 쉽도록 65536을 곱한 후에 소수점 아래를 버리고 정수부만 출력한다.
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/62997391/183292879-c45e083b-2bd1-4249-b562-13cd67a7e943.png)
+
 
 ### My Solution
 
