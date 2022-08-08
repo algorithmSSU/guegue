@@ -259,8 +259,8 @@ public class Programmers_clustering {
 
 - s의 길이는 1 이상 150,000 이하입니다.
 - s에는 '1'이 최소 하나 이상 포함되어 있습니다.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2014eada-047b-4a89-a063-fd4c8094dcc2/Untitled.png)
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%202.png)
 
 ### 입출력 예 설명
 
