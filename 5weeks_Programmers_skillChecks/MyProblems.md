@@ -238,3 +238,124 @@ public class Programmers_clustering {
         return (int) (answer * 65536);
     }
 }
+```
+
+---
+
+### **문제 설명**
+
+0과 1로 이루어진 어떤 문자열 x에 대한 이진 변환을 다음과 같이 정의합니다.
+
+1. x의 모든 0을 제거합니다.
+2. x의 길이를 c라고 하면, x를 "c를 2진법으로 표현한 문자열"로 바꿉니다.
+
+예를 들어, `x = "0111010"`이라면, x에 이진 변환을 가하면 `x = "0111010" -> "1111" -> "100"` 이 됩니다.
+
+0과 1로 이루어진 문자열 s가 매개변수로 주어집니다. s가 "1"이 될 때까지 계속해서 s에 이진 변환을 가했을 때, 이진 변환의 횟수와 변환 과정에서 제거된 모든 0의 개수를 각각 배열에 담아 return 하도록 solution 함수를 완성해주세요.
+
+---
+
+### 제한사항
+
+- s의 길이는 1 이상 150,000 이하입니다.
+- s에는 '1'이 최소 하나 이상 포함되어 있습니다.
+
+![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%202.png)
+
+### 입출력 예 설명
+
+입출력 예 #1
+
+- "110010101001"이 "1"이 될 때까지 이진 변환을 가하는 과정은 다음과 같습니다.
+
+![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%203.png)
+
+• 3번의 이진 변환을 하는 동안 8개의 0을 제거했으므로, `[3,8]`을 return 해야 합니다.
+
+### My Solution
+
+```java
+public static int[] solution(String s) {
+        ArrayList<Integer> answer = new ArrayList<>();
+
+        while (s.length() != 1) {
+            // 문자열 안에 0 제거
+            String tmpS = "";
+            int oneCount = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '1') {
+                    oneCount++;
+                    tmpS += "1";
+                }
+            }
+
+            // 제거된 0 개수 저장
+            answer.add(s.length() - tmpS.length());
+
+            s = Integer.toBinaryString(tmpS.length());
+        }
+
+        // ArrayList to Integer Array
+        int[] realAnswer = new int[2];
+        realAnswer[0] = answer.size();
+
+        //총합 계산
+        int sum = 0;
+        for(int i : answer)
+            sum += i;
+        realAnswer[1] = sum;
+
+        return realAnswer;
+    }
+```
+
+---
+
+n개의 음이 아닌 정수들이 있습니다. 이 정수들을 순서를 바꾸지 않고 적절히 더하거나 빼서 타겟 넘버를 만들려고 합니다. 예를 들어 [1, 1, 1, 1, 1]로 숫자 3을 만들려면 다음 다섯 방법을 쓸 수 있습니다.
+
+![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%204.png)
+
+사용할 수 있는 숫자가 담긴 배열 numbers, 타겟 넘버 target이 매개변수로 주어질 때 숫자를 적절히 더하고 빼서 타겟 넘버를 만드는 방법의 수를 return 하도록 solution 함수를 작성해주세요.
+
+### 제한사항
+
+- 주어지는 숫자의 개수는 2개 이상 20개 이하입니다.
+- 각 숫자는 1 이상 50 이하인 자연수입니다.
+- 타겟 넘버는 1 이상 1000 이하인 자연수입니다.
+
+![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%205.png)
+
+### 입출력 예 설명
+
+**입출력 예 #1**
+
+문제 예시와 같습니다.
+
+**입출력 예 #2**
+
+![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%206.png)
+
+### My Solution
+
+```java
+public static int solution(int[] numbers, int target) {
+        int answer = 0;
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(0);
+
+        for(int i : numbers){
+            ArrayList<Integer> tmpList = new ArrayList<>();
+            for(int j : arrayList){
+                tmpList.add(j + i);
+                tmpList.add(j - i);
+            }
+            arrayList = tmpList;
+        }
+
+        for(int i : arrayList){
+            if(i == target)
+                answer++;
+        }
+        return answer;
+    }
+```
