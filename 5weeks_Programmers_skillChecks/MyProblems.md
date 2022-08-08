@@ -259,7 +259,6 @@ public class Programmers_clustering {
 
 - s의 길이는 1 이상 150,000 이하입니다.
 - s에는 '1'이 최소 하나 이상 포함되어 있습니다.
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2014eada-047b-4a89-a063-fd4c8094dcc2/Untitled.png)
 
 
 ### 입출력 예 설명
@@ -268,7 +267,8 @@ public class Programmers_clustering {
 
 - "110010101001"이 "1"이 될 때까지 이진 변환을 가하는 과정은 다음과 같습니다.
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/62997391/183364398-d1cbfce9-1b56-4b58-ad9a-5ca7855e0a1a.png)
+
 
 • 3번의 이진 변환을 하는 동안 8개의 0을 제거했으므로, `[3,8]`을 return 해야 합니다.
 
@@ -313,7 +313,8 @@ public static int[] solution(String s) {
 
 n개의 음이 아닌 정수들이 있습니다. 이 정수들을 순서를 바꾸지 않고 적절히 더하거나 빼서 타겟 넘버를 만들려고 합니다. 예를 들어 [1, 1, 1, 1, 1]로 숫자 3을 만들려면 다음 다섯 방법을 쓸 수 있습니다.
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/62997391/183364425-9b07b578-7ea4-4da7-b7e4-145c3af82e1c.png)
+
 
 사용할 수 있는 숫자가 담긴 배열 numbers, 타겟 넘버 target이 매개변수로 주어질 때 숫자를 적절히 더하고 빼서 타겟 넘버를 만드는 방법의 수를 return 하도록 solution 함수를 작성해주세요.
 
@@ -323,7 +324,7 @@ n개의 음이 아닌 정수들이 있습니다. 이 정수들을 순서를 바�
 - 각 숫자는 1 이상 50 이하인 자연수입니다.
 - 타겟 넘버는 1 이상 1000 이하인 자연수입니다.
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/62997391/183364457-55bbb3ff-88fc-4d5c-b709-2c6ad7e86c9d.png)
 
 ### 입출력 예 설명
 
@@ -333,7 +334,8 @@ n개의 음이 아닌 정수들이 있습니다. 이 정수들을 순서를 바�
 
 **입출력 예 #2**
 
-![Untitled](week5%20Retrospective%2075698ac71c86413faa9311385a07bf63/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/62997391/183364475-41a91013-e47b-490f-b907-eb79bfb6f021.png)
+
 
 ### My Solution
 
