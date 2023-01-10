@@ -7,37 +7,38 @@ class Kakao_무지먹방라이브 {
         LinkedList 초기화
         */
         List<Food> foodList = new LinkedList();
-        for(int i = 0; i < food_times.length; i++){
-            foodList.add(new Food(i+1, food_times[i]));
+        long length = food_times.length;
+
+        for(int i = 0; i < length; i++){
+            foodList.add(new Food(food_times[i], i+1));
         }
 
         /*
         시간 순 정렬
         */
-        Collections.sort(foodList, (o1, o2) -> o1.food_time - o2.food_time);
+        foodList.sort(food_timeCompare);
 
         /*
         calculate
         */
         int idx = 0;
-        int length = foodList.size();
         int currentTime = 0;
         for(Food food : foodList){
             int diff = food.food_time - currentTime;
             // 이전과 높이차가 없는 경우 예외 처리
             if(diff != 0){
-                int sum = diff * length;
+                long sum = diff * length;
                 if(sum <= k){
                     k -= sum;
                     currentTime = food.food_time;
                 }else{
                     k %= length;
-                    foodList.subList(idx, food_times.length).sort((o1, o2) -> o1.seq - o2.seq);
+                    foodList.subList(idx, food_times.length).sort(seqCompare);
                     return foodList.get(idx + (int)k).seq;
                 }
             }
-            idx += 1;
-            length -= 1;
+            idx++;
+            length--;
         }
         return -1;
     }
@@ -46,11 +47,23 @@ class Kakao_무지먹방라이브 {
         int seq;
         int food_time;
 
-        Food(int seq, int food_time){
+        Food(int food_time, int seq){
             this.seq = seq;
             this.food_time = food_time;
         }
     }
+
+    Comparator<Food> food_timeCompare = new Comparator<Food>(){
+        public int compare(Food a, Food b){
+            return a.food_time - b.food_time;
+        }
+    };
+
+    Comparator<Food> seqCompare = new Comparator<Food>(){
+        public int compare(Food a, Food b){
+            return a.seq - b.seq;
+        }
+    };
 }
 
 
