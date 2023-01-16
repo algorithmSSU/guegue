@@ -1,4 +1,4 @@
-# Weekly Solving problem
+# Weekly PS
 
 
 | 주차  | 문제  | 풀이  | 분석  |
@@ -9,3 +9,15 @@
 | 6주차  | [프로그래머스 - 등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) <br> [프로그래머스 - 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) <br>[프로그래머스 - 위장](https://school.programmers.co.kr/learn/courses/30/lessons/42578) <br> [프로그래머스 - 베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579)  | [풀이]() <br> [풀이]()
 | 7주차  | [boj11725 - 트리의 부모 찾기](https://www.acmicpc.net/problem/11725) <br> [boj1068 - 트리](https://www.acmicpc.net/problem/1068) <br> [boj14425 - 문자열 집합](https://www.acmicpc.net/problem/14425) <br> [boj1991 - 트리 순회](https://www.acmicpc.net/problem/1991) <br> [boj2042 - 구간 합 구하기](https://www.acmicpc.net/problem/2042) <br> [boj10868 - 최솟값](https://www.acmicpc.net/problem/10868) <br> [boj11505 - 구간 곱 구하기](https://www.acmicpc.net/problem/11505) <br> [boj11437 - LCA](https://www.acmicpc.net/problem/11437) <br> [boj11438 - LCA2](https://www.acmicpc.net/problem/11438)  | [풀이](7weeks_Tree/BOJ11725.java) <br> [풀이](7weeks_Tree/BOJ1068.java) <br> [풀이](7weeks_Tree/BOJ14425.java) <br> [풀이](7weeks_Tree/BOJ1991.java) <br> [풀이](7weeks_Tree/BOJ2042.java) <br> [풀이](7weeks_Tree/BOJ10868.java) <br> [풀이](7weeks_Tree/BOJ11505.java) <br> [풀이](7weeks_Tree/BOJ11437.java) <br> [풀이](7weeks_Tree/BOJ11438.java)  |  [Tree](https://rattle-option-40e.notion.site/week7-Retrospective-9810e304048a46e981884e6934523339)
 
+<br>
+
+---
+
+# Restart PS
+(2022.01.01 ~ )
+
+|               기               | 문제          |                                                        풀이                                                        |                 유형                 | 발표 문제 |
+|:-----------------------------:|:------------|:----------------------------------------------------------------------------------------------------------------:|:----------------------------------:|:-----:|
+| 2022.01.16<br>~<br>2022.01.20 | [BOJ2470](https://www.acmicpc.net/problem/2470) | [BOJ2470(1)](FastCampus/Search/BOJ2470.java), [BOJ2470(2)](FastCampus/TwoPointers/BOJ2470.java) <br> [BOJ9999]() | Binary Search, Two Pointer <br> DP |   [BOJ2470](https://www.acmicpc.net/problem/2470)    |
+| 2022.01.21<br>~<br>2022.01.27 | .           |                                                        .                                                         |                 .                  |   .   |
+| 2022.01.28<br>~<br>2022.02.03 | .           |                                                        .                                                         |                 .                  |   .   |
