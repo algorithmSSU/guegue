@@ -39,9 +39,29 @@ public class BOJ2606 {
     }
 
     private static void process(){
-        dfs(1);
+//        dfs(1);
+        bfs(1);
 
         System.out.println(answerCount-1);
+    }
+
+    private static void bfs(int startVertex){
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(startVertex);
+        visited[startVertex] = true;
+
+        while(!queue.isEmpty()){
+            answerCount++;
+            int nowVertex = queue.poll();
+
+            for(int i : graph[nowVertex]){
+                if(!visited[i]){
+                    visited[i] = true;
+                    queue.add(i);
+                }
+            }
+        }
     }
 
     private static void dfs(int vertex){
