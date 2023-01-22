@@ -48,8 +48,8 @@
 //    public void preOrder(Node node) {
 //        if(node != null) {
 //            System.out.print(node.data);
-//            if(node.leftChild != null) {inOrder(node.leftChild);}
-//            if(node.rightChild != null) {inOrder(node.rightChild);}
+//            if(node.leftChild != null) {preOrder(node.leftChild);}
+//            if(node.rightChild != null) {preOrder(node.rightChild);}
 //        }
 //    }
 //
@@ -63,8 +63,8 @@
 //
 //    public void postOrder(Node node) {
 //        if(node != null) {
-//            if(node.leftChild != null) {inOrder(node.leftChild);}
-//            if(node.rightChild != null) {inOrder(node.rightChild);}
+//            if(node.leftChild != null) {postOrder(node.leftChild);}
+//            if(node.rightChild != null) {postOrder(node.rightChild);}
 //            System.out.print(node.data);
 //        }
 //    }
