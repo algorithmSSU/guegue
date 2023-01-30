@@ -4,6 +4,11 @@ import java.io.BufferedReader;
         import java.util.*;
 
 public class BOJ2252 {
+    /**
+     * Topological Sorting
+     * 특정 작업을 위해서 선행되어야 하는 작업이 있을 때
+     * ex) install package
+     */
     static int n, m;
     static List<Integer>[] graph;
     static List<Integer> answer;

@@ -8,6 +8,10 @@ import java.io.BufferedReader;
         import java.util.PriorityQueue;
 
 public class BOJ1916 {
+    /**
+     * 사실 제목만 봐도 BFS 혹은 Dijkstra 확인 가능
+     *
+     */
     static class Edge {
         int toVertex;
         int weight;
@@ -17,10 +21,10 @@ public class BOJ1916 {
             this.weight = weight;
         }
 
-        @Override
-        public String toString(){
-            return "toVertex : " + toVertex + " // weight : " + weight;
-        }
+//        @Override
+//        public String toString(){
+//            return "toVertex : " + toVertex + " // weight : " + weight;
+//        }
     }
 
     static class Info implements Comparable<Info> {
