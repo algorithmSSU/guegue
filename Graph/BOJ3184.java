@@ -60,10 +60,12 @@ public class BOJ3184 {
     private static void bfs(int y, int x){
         Queue<Integer> queue = new LinkedList<>();
 
-        // bfs search
+        // bfs init
         queue.add(y);
         queue.add(x);
         visited[y][x] = true;
+
+        // bfs search
         while(!queue.isEmpty()){
             int thisY = queue.poll();
             int thisX = queue.poll();

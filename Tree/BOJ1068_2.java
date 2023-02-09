@@ -71,5 +71,4 @@ public class BOJ1068_2 {
             leaf[node] += leaf[i];
         }
     }
-
 }
