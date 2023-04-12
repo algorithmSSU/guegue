@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 
-// https://www.acmicpc.net/problem/2018
+// https://www.acmicpc.net/problem/1940
 public class BOJ1940 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
