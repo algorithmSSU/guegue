@@ -4,6 +4,9 @@ import java.io.BufferedReader;
         import java.util.*;
 
 public class BOJ1753 {
+    /**
+     * 간선에 대한 정보
+     */
     static class Edge {
         int toVertexIdx;
         int weight;
@@ -19,6 +22,9 @@ public class BOJ1753 {
         }
     }
 
+    /**
+     * 시작점으로부터 가중치 총합에 대한 정보
+     */
     static class Info implements Comparable<Info> {
         int vertexIdx;
         int startToNowVertexWeight;
@@ -99,7 +105,7 @@ public class BOJ1753 {
         distance[start] = 0;
         queue.add(new Info(start, 0));
 
-        // dijkstra
+        // dijkstra using priority queue
         while (!queue.isEmpty()) {
             Info nowInfo = queue.poll();
 
