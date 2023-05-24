@@ -1,7 +1,3 @@
-# History V1.3
-
-[Daily PS and review in notion](https://rattle-option-40e.notion.site/Algorithm-adc1bec96ed84848a2fa9dfbe5747d76)
-
 # History V1.2
 
 (2022.05.17 ~ )
