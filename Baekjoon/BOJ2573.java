@@ -11,7 +11,6 @@ public class BOJ2573 {
     private static int n, m, year;
     private static List<Integer> iceList = new ArrayList<>();
 
-
     public static void main(String[] args) throws IOException {
         init();
 
@@ -25,8 +24,6 @@ public class BOJ2573 {
         // print answer
         System.out.println(iceList.size() == 0 ? 0 : year);
     }
-
-
 
     private static boolean isDividedMap() {
         boolean[][] isVisited = new boolean[n][m];
@@ -106,7 +103,6 @@ public class BOJ2573 {
         return copyMap;
     }
 
-
     private static void init() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -131,19 +127,6 @@ public class BOJ2573 {
                     iceList.add(j);
                 }
             }
-        }
-
-//        System.out.println("iceList");
-//        for (int i = 0; i < iceList.size(); i += 2) {
-//            System.out.println(iceList.get(i) + " " + iceList.get(i + 1));
-//        }
-    }
-
-    private static void debugPrint() {
-        for (int[] i : map) {
-            for (int j : i)
-                System.out.print(j + " ");
-            System.out.println();
         }
     }
 }
