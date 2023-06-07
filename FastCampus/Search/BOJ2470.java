@@ -62,9 +62,8 @@ public class BOJ2470 {
     private static int binarySearch(int target, int left, int right) {
         int answerIdx = right + 1;
 
-        while (left <= right) {
+        while (left < right) {
             int mid = (left + right) / 2;
-
             if (target <= array[mid]) {
                 answerIdx = mid;
                 right = mid -1;
