@@ -4,7 +4,7 @@
 //import java.util.ArrayList;
 //import java.util.StringTokenizer;
 //
-//public class BOJ1068 {
+//public class BOJ1068_3 {
 //    private static ArrayList<Integer>[] trees;
 //    private static boolean[] visited;
 //    private static int count;
