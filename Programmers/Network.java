@@ -44,5 +44,6 @@ public class Network {
 
         // init isVisited
         isVisited = new boolean[n];
+
     }
 }
